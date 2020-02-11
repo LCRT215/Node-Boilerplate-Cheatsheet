@@ -2,9 +2,7 @@
 
 - Reminder on starting projects using Node, Knex, Express, Helmet, Sqlite3
 
-# Steps to build a server
-
-## <p align="center">< -------- Already completed ----------></p>
+## <p align="center">< -------- Steps to build a server ----------></p>
 
 ### Create a directory for your server to live
 
@@ -34,6 +32,18 @@
 - Create folders: data, dummyRoute
 - In dummyRoute, create files: dummy-router.js, dummy-model.js
 - Inside these files include most common CRUD endpoints and helper functions
+
+```
+# Install dependencies
+npm install
+
+# Starts server (better to run with server *below*)
+npm run
+
+# Starts express server using nodemon
+npm run server
+
+```
 
 ## <p align="center">< -------- Adding Migrations & Seeding (on knex-branch) ----------></p>
 
