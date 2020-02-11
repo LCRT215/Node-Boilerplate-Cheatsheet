@@ -1,7 +1,7 @@
 {
   "name": "backend-boilerplate",
   "version": "1.0.0",
-  "description": "Generic Back End BoilerPlate",
+  "description": "Generic Back End Boilerplate",
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
