@@ -88,10 +88,33 @@ module.exports = {
 ## Create data (seed):
 
 - `npx knex seed:make 001-seedName` (makes a new seed)
+  REMEMBER TO INCREMENT THE THREE-DIGIT INTEGER BY 1 FOR EVERY NEW SEED
 - `npx knex seed:run` (runs/resets seed)
 
+## Create dbConfig.js in database folder:
+
+```
+const knex = require('knex');
+
+const knexConfig = require('../knexfile.js');
+
+module.exports = knex(knexConfig.development);
+```
+
+## Point environment to Testing
+
+- `npx knex migrate:latest --env=testing`
+
+## Point environment to Heroku
+
+- `$ npx knex migrate:latest --env production`
+- `$ npx heroku run knex migrate:latest -a heroku-app-name`
+
 File structure should be:
+
+```
 data > migration, seeds, db3 file
+```
 
 ## <p align="center">< -------- after forking and cloning this repo ----------></p>
 
